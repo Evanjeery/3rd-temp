@@ -166,3 +166,77 @@ header a {
 @media (min-width: 992px) {
 
 }
+.landing {
+    position: relative;
+}
+
+.down-icon {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.down-icon i {
+    font-size: 30px;
+    animation: downicon 1.5s infinite;
+}
+.maintitle {
+    text-transform: uppercase;
+    margin: 0 auto 80px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: var(--main-transition)
+}
+
+.maintitle::after,
+.maintitle::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.maintitle::after {
+    right: -30px;
+}
+.maintitle::before {
+    left: -30px;
+}
+.maintitle:hover::before{
+    z-index: -1;
+    animation: maintitlebefore 1.5s linear forwards;
+}
+/* animation section */
+@keyframes downicon {
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100%{
+        transform: translateY(0);
+    }
+    40%,60% {
+        transform: translateY(-15px);
+    }
+}
+@keyframes maintitlebefore {
+    50% {
+        left: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100% {
+
+        width: 50%;
+        height: 100%;
+        border-radius: 0%;
+    }
+}
