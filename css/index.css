@@ -211,7 +211,11 @@ header a {
 }
 .maintitle:hover::before{
     z-index: -1;
-    animation: maintitlebefore 1.5s linear forwards;
+    animation: maintitlebefore 0.5s linear forwards;
+}
+.maintitle:hover::after{
+    z-index: -1;
+    animation: maintitleafter 0.5s linear forwards;
 }
 /* animation section */
 @keyframes downicon {
@@ -229,12 +233,25 @@ header a {
 }
 @keyframes maintitlebefore {
     50% {
+        border-radius:50%;
         left: 0;
         width: 12px;
         height: 12px;
     }
     100% {
-
+        width: 50%;
+        height: 100%;
+        border-radius: 0%;
+    }
+}
+@keyframes maintitleafter {
+    50% {
+        border-radius:50%;
+        right: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100% {
         width: 50%;
         height: 100%;
         border-radius: 0%;
