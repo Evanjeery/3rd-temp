@@ -217,6 +217,9 @@ header a {
     z-index: -1;
     animation: maintitleafter 0.5s linear forwards;
 }
+.maintitle:hover {
+    animation: maintitle 0.5s linear forwards;
+}
 /* animation section */
 @keyframes downicon {
     0%,
@@ -234,12 +237,11 @@ header a {
 @keyframes maintitlebefore {
     50% {
         border-radius:50%;
-        left: 0;
+        left: 50%;
         width: 12px;
         height: 12px;
     }
     100% {
-        left:50%;
         width: 50%;
         height: 100%;
         border-radius: 0%;
@@ -248,14 +250,23 @@ header a {
 @keyframes maintitleafter {
     50% {
         border-radius:50%;
-        right: 0;
+        right: 50%;
         width: 12px;
         height: 12px;
     }
     100% {
-        right:50%;
         width: 50%;
         height: 100%;
         border-radius: 0%;
     }
 }
+@keyframes maintitle {
+    50% {
+        color:black;
+    }
+    100% {
+        color:white;
+        border:none;
+    }
+}
+
