@@ -265,7 +265,7 @@ header a {
 @keyframes maintitle {
     100% {
         color:white;
-        border-color:transparent;
+        border-color:white;
     }
 }
 
