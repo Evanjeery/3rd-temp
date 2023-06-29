@@ -263,9 +263,10 @@ header a {
     }
 }
 @keyframes maintitle {
+    0%,
     100% {
         color:white;
-        border:none;
+        border-color:transparent;
     }
 }
 
