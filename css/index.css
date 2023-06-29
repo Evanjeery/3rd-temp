@@ -218,7 +218,7 @@ header a {
     animation: maintitleafter 0.5s linear forwards;
 }
 .maintitle:hover {
-    animation: maintitle 0.5s  0.5s linear forwards;
+    animation: maintitle 0.5s  linear forwards;
 }
 /* animation section */
 @keyframes downicon {
@@ -263,7 +263,6 @@ header a {
     }
 }
 @keyframes maintitle {
-    0%,
     100% {
         color:white;
         border-color:transparent;
