@@ -237,7 +237,7 @@ header a {
 @keyframes maintitlebefore {
     50% {
         border-radius:50%;
-        left: 50%;
+        left: 0px;
         width: 12px;
         height: 12px;
     }
@@ -250,7 +250,7 @@ header a {
 @keyframes maintitleafter {
     50% {
         border-radius:50%;
-        right: 50%;
+        right: 0px;
         width: 12px;
         height: 12px;
     }
