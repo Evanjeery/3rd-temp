@@ -420,6 +420,7 @@ header a {
     display: block;
     margin: 0 auto 30px;
     z-index: 1;
+    transition-duration: .3s;
 }
 .features .box:hover a {
     animation: featmore .3s linear forwards;
